@@ -1,7 +1,7 @@
 /* Theme Color File */
 
 a,
-.theme_color,
+/* .theme_color, */
 .btn-style-four:hover,
 .btn-style-two:hover,
 .btn-style-five,
@@ -35,7 +35,7 @@ a,
 .work-block .inner-box:hover .icon-box,
 .team-member .inner-box .lower-box h3 a:hover,
 .team-member-two .inner-box .lower-box h3 a:hover{
-	color:#ff3548;
+	color: black;
 }
 
 /*Background Color*/
@@ -62,7 +62,7 @@ a,
 .main-header .sticky-header .main-menu .navigation > li:hover > a,
 .main-header .sticky-header .main-menu .navigation > li.current > a,
 .main-header .sticky-header .main-menu .navigation > li.current-menu-item > a{
-	background-color:#ff3548;
+	background-color: #a997cb;
 }
 
 /*Border Color*/
@@ -101,13 +101,13 @@ a,
 .comment-form .form-group textarea:focus,
 .comment-form button,
 .work-block .inner-box:hover .icon-box{
-	border-color:#ff3548;
+	border-color: black;
 }
 
 /*RGBA Color Light*/
 .fact-counter-section:before,
 .gallery-item .overlay-box{
-	background-color:rgba(255,53,72,0.75);
+
 }
 
 /*RGBA Color Dark*/

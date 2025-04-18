@@ -29,9 +29,21 @@
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
+<style>
+    /* Hide the scrollbar */
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
+    /* For Firefox */
+    html {
+        scrollbar-width: none;
+    }
+</style>
 <body>
-<div class="page-wrapper">
+<div class="page-wrapper"
+
+>
  	
     <!-- Preloader -->
     <div class="preloader"></div>
@@ -79,7 +91,9 @@
         <div class="header-lower">
             
         	<div class="auto-container">
-            	<div class="nav-outer clearfix">
+            	<div class="nav-outer clearfix"
+                style="margin-left: 40pxpx;"
+                >
                     <!-- Main Menu -->
                     <nav class="main-menu">
                         <div class="navbar-header">
@@ -95,14 +109,23 @@
                             <div class="pull-left logo-outer">
                                 <div class="logo"
                                 style="height: 29px;
-                                width: 200px;"
+                                width: 200px;
+                                margin-top: 9px;
+                                margin-right: 250px;
+                                border: 2px solid #a997cb;"
                                 ><a href="index.html"><img src="images/DirtOf2.png" alt="logo" title="log"></a></div>
                             </div>
                             <ul class="navigation clearfix" style="display: flex;
-                                  flex-direction: row;    
+                                  flex-direction: row;;    
                             ">
-                                <li class="current dropdown"><a href="#">Home</a>
-                                    <ul>
+                                <li class="current dropdown" id="Hover_check"><a href="index.html"
+                                    style="font-weight: bold;
+                                    :hover{
+                                        color: #a997cb;
+                                    }"
+
+                                    >Home</a>
+                                    <!-- <ul>
                                         <li><a href="index.html">Homepage One</a></li>
                                         <li><a href="index-2.html">Homepage Two</a></li>
                                         <li class="dropdown"><a href="#">Header Styles</a>
@@ -111,26 +134,36 @@
                                                 <li><a href="index-2.html">Header Style Two</a></li>
                                             </ul>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li class="dropdown"><a href="about.html">About Us</a>
-                                    <ul>
+                                <li class="dropdown"><a href="about.html"
+                                    style="font-weight: bold;
+                                    :hover{
+                                        color: #a997cb;
+                                    }"
+                                    >About Us</a>
+                                    <!-- <ul>
                                         <li><a href="about.html">About us</a></li>
                                         <li><a href="team.html">Our Team</a></li>
                                         <li><a href="faq.html">faq</a></li>
                                         <li><a href="error-page.html">404 Page</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
-                                <li class="dropdown"><a href="#">Services</a>
+                                <li class="dropdown"><a href="#"
+                                    style="font-weight: bold;">Services</a>
                                     <ul>
                                         <li><a href="services.html">Services</a></li>
-                                        <li><a href="services-2.html">Laundry Service</a></li>
-                                        <li><a href="services-2.html">dry cleaning service</a></li>
-                                        <li><a href="services-2.html">silk and dry service</a></li>
-                                        <li><a href="services-2.html">commercial service</a></li>
+                                        <li><a href="services-2.html">Dry Cleaning</a></li>
+                                        <li><a href="services-2.html">Wet Cleaning </a></li>
+                                        <li><a href="services-2.html">Steam Cleaning</a></li>
+                                        <li><a href="services-2.html">Bag Cleaning</a></li>
+                                        <li><a href="services-2.html">Shoe Cleaning</a></li>
+                                        <li><a href="services-2.html">Carpet Cleaning</a></li>
+                                        <li><a href="services-2.html">Curtain Cleaning</a></li>
+                                        <li><a href="services-2.html">Sofa Cleaning</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="#">Projects</a>
+                                <!-- <li class="dropdown"><a href="#">Projects</a>
                                     <ul>
                                         <li><a href="projects.html">Our projects</a></li>
                                         <li><a href="projects-fullwidth.html">Projects Fullwidth</a></li>
@@ -143,11 +176,26 @@
                                         <li><a href="blog-classic.html">Blog with Sidebar</a></li>
                                         <li><a href="blog-single.html">Blog Details</a></li>
                                     </ul>
-                                </li>
-                                <li><a href="contact.html">Contact us</a></li>
+                                </li> -->
+                                <li><a href="contact.html"
+                                    style="font-weight: bold;
+                                    :hover{
+                                        color: #a997cb;
+                                    }"
+                                    >Contact us</a></li>
+                                <div class="upper-column info-box">
+                                    <a href="contact.html" class="order-btn theme-btn"
+                                    style="background-color: #a997cb;
+                                    color: white;
+                                     margin-top: 15px;
+                                     margin-left: 100px;
+                                     padding: 10px;
+                                     border-radius: 3px;
+                                     "
+                                    
+                                    >Order now!</a>
                             </ul>
-                            <div class="upper-column info-box">
-                                <a href="contact.html" class="order-btn theme-btn">Order now!</a>
+                      
                             </div>
                         </div>
                     </nav>
@@ -198,7 +246,7 @@
                             </button>
                         </div>
                         
-                        <div class="navbar-collapse collapse clearfix">
+                        <!-- <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
                                 <li class="current dropdown"><a href="#">Home</a>
                                     <ul>
@@ -245,7 +293,7 @@
                                 </li>
                                 <li><a href="contact.html">Contact us</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </nav><!-- Main Menu End-->
                 </div>
                 
@@ -323,7 +371,8 @@
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                     style="z-index: 7; white-space: nowrap;text-transform:left;">
                     	<div class="text-center">
-                    		<a href="about.html" class="theme-btn btn-style-one">Learn More</a>
+                    		<a href="about.html" class="theme-btn btn-style-one"
+                            >Learn More</a>
                         </div>
                     </div>
                     
@@ -486,7 +535,8 @@
                         </div>
                         <div class="lower-box">
                         	<h3><a href="services-2.html">Wash & Fold Laundry <br> Service</a></h3>
-                            <a href="services-2.html" class="theme-btn btn-style-two">Read More</a>
+                            <a href="services-2.html" class="theme-btn btn-style-two"
+                            >Read More</a>
                         </div>
                     </div>
                 </div>
@@ -560,7 +610,8 @@
     <!--End Signature Section-->
     
     <!--Fun Facts Section-->
-    <div class="fact-counter-section" style="background-image:url(images/background/1.jpg)">
+    <div class="fact-counter-section" style="background-image:url(images/background/1.jpg);
+    ">
         <div class="fact-counter">
             <div class="auto-container">
                 <div class="row clearfix">
@@ -612,7 +663,9 @@
     <!--End Fun Facts Section-->
     
     <!--Works Section-->
-    <section class="works-section" style="background-image:url(images/resource/image-2.png)">
+    <section class="works-section" style="background-image:url(images/resource/image-2.png);
+    margin-top: -40px;
+    ">
     	<div class="auto-container">
         	<!--Sec Title-->
             <div class="sec-title centered">
@@ -738,46 +791,60 @@
             
             	<!--Price Block-->
                 <div class="price-block col-md-4 col-sm-6 col-xs-12">
-                	<div class="inner-box">
-                    	<div class="title">10 cloths</div>
-                        <div class="price">$15.99<span>/ m</span></div>
+                	<div class="inner-box"                   >
+                    	<div class="title"
+                        style="color: #a997cb;"
+                        >10 cloths</div>
+                        <div class="price">&#8377;15.99<span>/ m</span></div>
                         <ul>
                         	<li>1 pairs of jeans</li>
                             <li>4 t-shirts</li>
                             <li>3 button-down shirts</li>
                             <li>1 pair of shorts</li>
                         </ul>
-                        <a href="#" class="theme-btn btn-style-three">Signup</a>
+                        <a href="#" class="theme-btn btn-style-three"
+                        style="background-color: #a997cb;"
+                        >Signup</a>
                     </div>
                 </div>
                 
                 <!--Price Block-->
                 <div class="price-block col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box">
-                    	<div class="title">20 cloths</div>
-                        <div class="price">$26.99<span>/ m</span></div>
+                    	<div class="title"
+                        style="color: #a997cb;"
+                        >20 cloths</div>
+                        <div class="price">&#8377;26.99<span>/ m</span></div>
                         <ul>
                         	<li>1 pairs of jeans</li>
                             <li>4 t-shirts</li>
                             <li>3 button-down shirts</li>
                             <li>1 pair of shorts</li>
                         </ul>
-                        <a href="#" class="theme-btn btn-style-three">Signup</a>
+                        <a href="#" class="theme-btn btn-style-three"
+                        style="background-color: #a997cb;"
+                        >Signup</a>
                     </div>
                 </div>
                 
                 <!--Price Block-->
                 <div class="price-block col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box">
-                    	<div class="title">50 cloths</div>
-                        <div class="price">$53.99<span>/ m</span></div>
+                    	<div class="title"
+                        style="color: #a997cb;
+                        :hover{color: black;
+                        border: black;}"
+                        >50 cloths</div>
+                        <div class="price">&#8377;53.99<span>/ m</span></div>
                         <ul>
                         	<li>1 pairs of jeans</li>
                             <li>4 t-shirts</li>
                             <li>3 button-down shirts</li>
                             <li>1 pair of shorts</li>
                         </ul>
-                        <a href="#" class="theme-btn btn-style-three">Signup</a>
+                        <a href="#" class="theme-btn btn-style-three"
+                        style="background-color: #a997cb;"
+                        >Signup</a>
                     </div>
                 </div>
                 
@@ -787,17 +854,17 @@
     <!--End Price Section-->
     
     <!--App Section-->
-    <section class="app-section" style="background-image:url(images/background/3.jpg)">
+    <!-- <section class="app-section" style="background-image:url(images/background/3.jpg)">
     	<div class="auto-container">
-        	<div class="row clearfix">
+        	<div class="row clearfix"> -->
             	<!--Image Column-->
-            	<div class="image-column col-md-5 col-sm-12 col-xs-12">
+            	<!-- <div class="image-column col-md-5 col-sm-12 col-xs-12">
                 	<div class="image">
                     	<img src="images/resource/mobile.png" alt="" />
                     </div>
-                </div>
+                </div> -->
                 <!--Content Column-->
-            	<div class="content-column col-md-7 col-sm-12 col-xs-12">
+            	<!-- <div class="content-column col-md-7 col-sm-12 col-xs-12">
                 	<div class="inner-column">
                     	<div class="title">don’t miss our new apps</div>
                         <h2>Get Our <span class="theme_color">Mobile Apps</span> for Easy <br> & Convenient Usage</h2>
@@ -809,21 +876,21 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--End App Section-->
     
     <!--News Section-->
-    <section class="news-section">
-    	<div class="auto-container">
+    <!-- <section class="news-section">
+    	<div class="auto-container"> -->
         	<!--Sec Title-->
-            <div class="sec-title centered">
+            <!-- <div class="sec-title centered">
             	<h2>Latest News</h2>
             </div>
             
             <div class="row clearfix">
-            	
+            	 -->
                 <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                <!-- <div class="news-block col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box">
                     	<div class="image">
                         	<a href="blog-single.html"><img src="images/resource/news-1.jpg" alt="" /></a>
@@ -835,9 +902,9 @@
                         </div>
                     </div>
                 </div>
-                
+                 -->
                 <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                <!-- <div class="news-block col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box">
                     	<div class="image">
                         	<a href="blog-single.html"><img src="images/resource/news-2.jpg" alt="" /></a>
@@ -848,10 +915,10 @@
                             <a href="blog-single.html" class="detail">More Details <span class="arrow flaticon-arrow-pointing-to-right"></span></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
                 <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                <!-- <div class="news-block col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box">
                     	<div class="image">
                         	<a href="blog-single.html"><img src="images/resource/news-3.jpg" alt="" /></a>
@@ -867,7 +934,7 @@
 			</div>
             
         </div>
-    </section>
+    </section> -->
     <!--End News Section-->
     
     <!--Map Section-->
@@ -923,8 +990,11 @@
                             <!--Footer Column-->
                             <div class="footer-column col-md-7 col-sm-6 col-xs-12">
                                 <div class="footer-widget logo-widget">
-									<div class="logo">
-                                    	<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+									<div class="logo"
+                                    style="width: 200px;
+                                    height: 40px;"
+                                    >
+                                    	<a href="index.html"><img src="images/DirtOf3.png" alt="" /></a>
                                     </div>
                                     <div class="text">Floor & Decor is a leading specialty retailer in the hard surface flooring market, offering the broadest in-stock selection</div>
                                 </div>
@@ -939,8 +1009,8 @@
                                         	<li><a href="#">About us</a></li>
                                             <li><a href="#">Customer</a></li>
                                             <li><a href="#">Service</a></li>
-                                            <li><a href="#">Collection</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <!-- <li><a href="#">Collection</a></li>
+                                            <li><a href="#">Blog</a></li> -->
                                             <li><a href="#">BestSellers</a></li>
                                         </ul>
                                     </div>
@@ -996,7 +1066,8 @@
         </div>
         <div class="footer-bottom">
         	<div class="auto-container">
-            	<div class="text">&copy; 2017 <span class="theme_color">DryCo Inc.</span> All Rights Reserved to It’s Owner</div>
+            	<div class="text">&copy; 2025. <span class="theme_color" style="color: black;">DirtOF.</span> All Rights Reserved to It’s Owner</div>
+                <div class="text" style="color: white;"><span class="theme_color">Develope By Shine Infosolution.</span> </div>
             </div>
         </div>
     </footer>

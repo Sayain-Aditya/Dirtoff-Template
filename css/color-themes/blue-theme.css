@@ -101,7 +101,7 @@ a,
 .comment-form .form-group textarea:focus,
 .comment-form button,
 .work-block .inner-box:hover .icon-box{
-	border-color:#0074D9;
+	border-color: black;
 }
 
 /*RGBA Color Light*/
