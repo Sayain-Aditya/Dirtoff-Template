@@ -1429,11 +1429,11 @@ img{
 	z-index: 1;
 }
 
-.services-block .inner-box .image img{
+/* .services-block .inner-box .image img{
 	position:relative;
 	width:100%;
 	display:block;
-}
+} */
 
 .services-block .inner-box .lower-box{
 	position:relative;
@@ -1844,10 +1844,11 @@ img{
 }
 
 .price-block .inner-box:hover{
-	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.10);
-	-ms-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.10);
-	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.10);
-	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.10);
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.41);
+	-ms-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.41);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.41);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.41
+	);
 }
 
 .price-block .inner-box .title{

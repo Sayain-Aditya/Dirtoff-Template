@@ -36,7 +36,111 @@
     html {
         scrollbar-width: none;
     }
+    .no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 </style>
+<style>
+    .form-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      max-width: 600px;
+      transform: translate(-50%, -50%);
+      border: 2px solid #888;
+      z-index: 1000;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .form-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .form-container h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    
+    .form-container label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="date"] {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    
+    .form-container .btn {
+      flex: 1;
+      padding: 10px;
+      background-color: #a997cb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .form-container .btn:hover {
+      background-color: #937fbc;
+    }
+    
+    .form-container .cancel {
+      background-color: #777;
+    }
+    
+    .form-container .cancel:hover {
+      background-color: #555;
+    }
+    
+    /* @media (max-width: 480px) {
+      .form-popup {
+        width: 95%;
+        padding: 15px;
+      }
+    
+      .button-group {
+        flex-direction: column;
+      }
+    
+      .button-group .btn {
+        width: 100%;
+      }
+    } */
+    </style>
+    
+    <script>
+        function openForm() {
+          document.getElementById("popupForm").style.display = "block";
+          document.body.classList.add("no-scroll"); // Disable background scroll
+        }
+        
+        function closeForm() {
+          document.getElementById("popupForm").style.display = "none";
+          document.body.classList.remove("no-scroll"); // Re-enable scroll
+        }
+        </script>
+        
 <body>
     <div class="page-wrapper"
 
@@ -177,17 +281,37 @@
                                             color: #a997cb;
                                         }"
                                         >Contact us</a></li>
-                                    <div class="upper-column info-box">
-                                        <a href="contact.html" class="order-btn theme-btn"
-                                        style="background-color: #a997cb;
-                                        color: white;
-                                         margin-top: 15px;
-                                         margin-left: 100px;
-                                         padding: 10px;
-                                         border-radius: 3px;
-                                         "
-                                        
-                                        >Order now!</a>
+                                        <div class="upper-column info-box">
+                                            <a href="javascript:void(0)" class="order-btn theme-btn"
+                                               onclick="openForm()"
+                                               style="background-color: #a997cb;
+                                                      color: white;
+                                                      margin-top: 15px;
+                                                      margin-left: 100px;
+                                                      padding: 10px;
+                                                      border-radius: 3px;">
+                                              Schedule In!
+                                            </a>
+                                          </div>
+                                          
+                                          <!-- Popup Form -->
+                                          <div id="popupForm" class="form-popup">
+                                            <form class="form-container">
+                                              <h2>Schedule Form</h2>
+                                          
+                                              <label for="name"><b>Name</b></label>
+                                              <input type="text" placeholder="Enter Name" name="name" required>
+                                          
+                                              <label for="email"><b>Email</b></label>
+                                              <input type="email" placeholder="Enter Email" name="email" required>
+                                          
+                                              <label for="date"><b>Preferred Date</b></label>
+                                              <input type="date" name="date" required>
+                                          
+                                              <button type="submit" class="btn">Submit</button>
+                                              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                            </form>
+                                          </div>
                                 </ul>
                           
                                 </div>
